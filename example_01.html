@@ -13,9 +13,68 @@
 	<script src="./js/example_01.js"></script>
 </head>
 <body>
-	<h1>Input check or radio</h1>
+	<h1>
+		Input check or radio
+		<div class="loading display_none">로딩 중.....</div>
+	</h1>
 
-	<input type="text">
+	<button class="set_radio_1">라디오 1 선택</button>
+	<button>라디오 2 선택</button>
+
+	<label>
+		라디오 1
+		<input id="id_input" class="input_radio_1" name="라디오버튼들" type="radio" value="라디오 1" checked="checked">
+	</label>
+
+	<label>
+		라디오 2
+		<input name="라디오버튼들" type="radio" value="라디오 2">
+	</label>
+
+	<p></p>
+	<div>
+
+		<button>이거 눌러서 2번 선택</button>
+
+		<select name="select_study" id="select_study">
+			<option value="">전체</option>
+			<option value="1번">1번</option>
+			<option value="2번">2번</option>
+		</select>
+	</div>
+
+<p></p>
+<div>
+	<label>
+		<input class="check_all" type="checkbox" value="">전체
+	</label>
+	<label>
+		<input class="check" type="checkbox" value="1">1번
+	</label>
+	<label>
+		<input class="check" type="checkbox" value="2">2번
+	</label>
+</div>
+
+<h2>포지션 그려보기</h2>
+
+<!-- 로딩화면 전체화면 -->
+<div class="full_loading">로딩화면 전체화면</div>
+
+<!-- 우하하 영역 uhaha 에다가 uhaha_loading 로딩 바 표시하기 -->
+<div class="wrap">
+	영역이 묶임
+	<div class="wrap_wrap">
+		이것은 111과 222의 영역이요
+		<div>
+			영역영역 1111
+		</div>
+		<div class="uhaha">
+			우하하 영역
+			<div class="uhaha_loading">우하하 영역에다 넣는 로딩 화면</div>
+		</div>
+	</div>
+</div>
 
 </body>
 </html>
